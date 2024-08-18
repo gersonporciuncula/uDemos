@@ -1,0 +1,296 @@
+{% extends 'sidebar.html' %}
+{% block conteudo %}
+   <body>
+      <div class="container">
+         <h5>Ola. Por favor, leia cada um dos itens a seguir cuidadosamente, pensando em como eles se relacionam com sua vida e
+            então indique o quão verdadeiro é para você!
+         </h2>
+         <form method="POST" action="">
+            <table class="table table-striped">
+            <thead>
+               <tr>
+                  <th>Use a seguinte escala para responder: 0 não é verdade...4 um pouco verdadeiro...7 muito verdadeiro </th>
+                  <th>1</th>
+                  <th>2</th>
+                  <th>3</th>
+                  <th>4</th>
+                  <th>5</th>
+                  <th>6</th>
+                  <th>7</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <td>1 - Sinto que sou livre para decidir por mim mesmo como viver minha vida.</td>
+                  <td><input type="checkbox" name="bpnss1" value="1" {% if user.bpnss1 == 1 %}checked{% endif %}>1<br></td>
+                  <td><input type="checkbox" name="bpnss1" value="2" {% if user.bpnss1 == 2 %}checked{% endif %}>2<br></td>
+                  <td><input type="checkbox" name="bpnss1" value="3" {% if user.bpnss1 == 3 %}checked{% endif %}>3<br></td>
+                  <td><input type="checkbox" name="bpnss1" value="4" {% if user.bpnss1 == 4 %}checked{% endif %}>4<br></td>
+                  <td><input type="checkbox" name="bpnss1" value="5" {% if user.bpnss1 == 5 %}checked{% endif %}>5<br></td>
+                  <td><input type="checkbox" name="bpnss1" value="6" {% if user.bpnss1 == 6 %}checked{% endif %}>6<br></td>
+                  <td><input type="checkbox" name="bpnss1" value="7" {% if user.bpnss1 == 7 %}checked{% endif %}>7<br></td>
+               </tr>
+               <tr>
+                  <td>2 - Gosto muito das pessoas com quem interajo.</td>
+                  <td><input type="checkbox" name="bpnss2" value="1" {% if user.bpnss2 == 1 %}checked{% endif %}>1<br></td>
+                  <td><input type="checkbox" name="bpnss2" value="2" {% if user.bpnss2 == 2 %}checked{% endif %}>2<br></td>
+                  <td><input type="checkbox" name="bpnss2" value="3" {% if user.bpnss2 == 3 %}checked{% endif %}>3<br></td>
+                  <td><input type="checkbox" name="bpnss2" value="4" {% if user.bpnss2 == 4 %}checked{% endif %}>4<br></td>
+                  <td><input type="checkbox" name="bpnss2" value="5" {% if user.bpnss2 == 5 %}checked{% endif %}>5<br></td>
+                  <td><input type="checkbox" name="bpnss2" value="6" {% if user.bpnss2 == 6 %}checked{% endif %}>6<br></td>
+                  <td><input type="checkbox" name="bpnss2" value="7" {% if user.bpnss2 == 7 %}checked{% endif %}>7<br></td>
+               </tr>
+               <tr>
+                  <td>3 - Frequentemente, não me sinto muito competente.</td>
+                  <td><input type="checkbox" name="bpnss3" value="1" {% if user.bpnss3 == 1 %}checked{% endif %}>1<br></td>
+                  <td><input type="checkbox" name="bpnss3" value="2" {% if user.bpnss3 == 2 %}checked{% endif %}>2<br></td>
+                  <td><input type="checkbox" name="bpnss3" value="3" {% if user.bpnss3 == 3 %}checked{% endif %}>3<br></td>
+                  <td><input type="checkbox" name="bpnss3" value="4" {% if user.bpnss3 == 4 %}checked{% endif %}>4<br></td>
+                  <td><input type="checkbox" name="bpnss3" value="5" {% if user.bpnss3 == 5 %}checked{% endif %}>5<br></td>
+                  <td><input type="checkbox" name="bpnss3" value="6" {% if user.bpnss3 == 6 %}checked{% endif %}>6<br></td>
+                  <td><input type="checkbox" name="bpnss3" value="7" {% if user.bpnss3 == 7 %}checked{% endif %}>7<br></td>
+               </tr>
+               <tr>
+                  <td>4 - Sinto-me pressionado em minha vida.</td>
+                  <td><input type="checkbox" name="bpnss4" value="1" {% if user.bpnss4 == 1 %}checked{% endif %}>1<br></td>
+                  <td><input type="checkbox" name="bpnss4" value="2" {% if user.bpnss4 == 2 %}checked{% endif %}>2<br></td>
+                  <td><input type="checkbox" name="bpnss4" value="3" {% if user.bpnss4 == 3 %}checked{% endif %}>3<br></td>
+                  <td><input type="checkbox" name="bpnss4" value="4" {% if user.bpnss4 == 4 %}checked{% endif %}>4<br></td>
+                  <td><input type="checkbox" name="bpnss4" value="5" {% if user.bpnss4 == 5 %}checked{% endif %}>5<br></td>
+                  <td><input type="checkbox" name="bpnss4" value="6" {% if user.bpnss4 == 6 %}checked{% endif %}>6<br></td>
+                  <td><input type="checkbox" name="bpnss4" value="7" {% if user.bpnss4 == 7 %}checked{% endif %}>7<br></td>
+               </tr>
+               <tr>
+                  <td>5 - As pessoas que conheço dizem que sou bom no que faço.</td>
+                  <td><input type="checkbox" name="bpnss5" value="1" {% if user.bpnss5 == 1 %}checked{% endif %}>1<br></td>
+                  <td><input type="checkbox" name="bpnss5" value="2" {% if user.bpnss5 == 2 %}checked{% endif %}>2<br></td>
+                  <td><input type="checkbox" name="bpnss5" value="3" {% if user.bpnss5 == 3 %}checked{% endif %}>3<br></td>
+                  <td><input type="checkbox" name="bpnss5" value="4" {% if user.bpnss5 == 4 %}checked{% endif %}>4<br></td>
+                  <td><input type="checkbox" name="bpnss5" value="5" {% if user.bpnss5 == 5 %}checked{% endif %}>5<br></td>
+                  <td><input type="checkbox" name="bpnss5" value="6" {% if user.bpnss5 == 6 %}checked{% endif %}>6<br></td>
+                  <td><input type="checkbox" name="bpnss5" value="7" {% if user.bpnss5 == 7 %}checked{% endif %}>7<br></td>
+               </tr>
+               <tr>
+                  <td>6 - Eu me dou bem com as pessoas com quem entro em contato.</td>
+                  <td><input type="checkbox" name="bpnss6" value="1" {% if user.bpnss6 == 1 %}checked{% endif %}>1<br></td>
+                  <td><input type="checkbox" name="bpnss6" value="2" {% if user.bpnss6 == 2 %}checked{% endif %}>2<br></td>
+                  <td><input type="checkbox" name="bpnss6" value="3" {% if user.bpnss6 == 3 %}checked{% endif %}>3<br></td>
+                  <td><input type="checkbox" name="bpnss6" value="4" {% if user.bpnss6 == 4 %}checked{% endif %}>4<br></td>
+                  <td><input type="checkbox" name="bpnss6" value="5" {% if user.bpnss6 == 5 %}checked{% endif %}>5<br></td>
+                  <td><input type="checkbox" name="bpnss6" value="6" {% if user.bpnss6 == 6 %}checked{% endif %}>6<br></td>
+                  <td><input type="checkbox" name="bpnss6" value="7" {% if user.bpnss6 == 7 %}checked{% endif %}>7<br></td>
+               </tr>
+               <tr>
+                  <td>7 - Eu praticamente sou reservado e não tenho muitos contatos sociais.</td>
+                  <td><input type="checkbox" name="bpnss7" value="1" {% if user.bpnss7 == 1 %}checked{% endif %}>1<br></td>
+                  <td><input type="checkbox" name="bpnss7" value="2" {% if user.bpnss7 == 2 %}checked{% endif %}>2<br></td>
+                  <td><input type="checkbox" name="bpnss7" value="3" {% if user.bpnss7 == 3 %}checked{% endif %}>3<br></td>
+                  <td><input type="checkbox" name="bpnss7" value="4" {% if user.bpnss7 == 4 %}checked{% endif %}>4<br></td>
+                  <td><input type="checkbox" name="bpnss7" value="5" {% if user.bpnss7 == 5 %}checked{% endif %}>5<br></td>
+                  <td><input type="checkbox" name="bpnss7" value="6" {% if user.bpnss7 == 6 %}checked{% endif %}>6<br></td>
+                  <td><input type="checkbox" name="bpnss7" value="7" {% if user.bpnss7 == 7 %}checked{% endif %}>7<br></td>
+               </tr>
+               <tr>
+                  <td>8 - Geralmente me sinto livre para expressar minhas ideias e opiniões.</td>
+                  <td><input type="checkbox" name="bpnss8" value="1" {% if user.bpnss7 == 1 %}checked{% endif %}>1<br></td>
+                  <td><input type="checkbox" name="bpnss8" value="2" {% if user.bpnss7 == 2 %}checked{% endif %}>2<br></td>
+                  <td><input type="checkbox" name="bpnss8" value="3" {% if user.bpnss7 == 3 %}checked{% endif %}>3<br></td>
+                  <td><input type="checkbox" name="bpnss8" value="4" {% if user.bpnss7 == 4 %}checked{% endif %}>4<br></td>
+                  <td><input type="checkbox" name="bpnss8" value="5" {% if user.bpnss7 == 5 %}checked{% endif %}>5<br></td>
+                  <td><input type="checkbox" name="bpnss8" value="6" {% if user.bpnss8 == 6 %}checked{% endif %}>6<br></td>
+                  <td><input type="checkbox" name="bpnss8" value="7" {% if user.bpnss8 == 7 %}checked{% endif %}>7<br></td>
+               </tr>
+               <tr>
+                  <td>9 - Considero minhas amigas as pessoas com quem interajo regularmente</td>
+                  <td><input type="checkbox" name="bpnss9" value="1" {% if user.bpnss9 == 1 %}checked{% endif %}>1<br></td>
+                  <td><input type="checkbox" name="bpnss9" value="2" {% if user.bpnss9 == 2 %}checked{% endif %}>2<br></td>
+                  <td><input type="checkbox" name="bpnss9" value="3" {% if user.bpnss9 == 3 %}checked{% endif %}>3<br></td>
+                  <td><input type="checkbox" name="bpnss9" value="4" {% if user.bpnss9 == 4 %}checked{% endif %}>4<br></td>
+                  <td><input type="checkbox" name="bpnss9" value="5" {% if user.bpnss9 == 5 %}checked{% endif %}>5<br></td>
+                  <td><input type="checkbox" name="bpnss9" value="6" {% if user.bpnss9 == 6 %}checked{% endif %}>6<br></td>
+                  <td><input type="checkbox" name="bpnss9" value="7" {% if user.bpnss9 == 7 %}checked{% endif %}>7<br></td>
+               </tr>
+               <tr>
+                  <td>10 - Pude aprender novas habilidades interessantes recentemente.</td>
+                  <td><input type="checkbox" name="bpnss10" value="1" {% if user.bpnss10 == 1 %}checked{% endif %}>1<br></td>
+                  <td><input type="checkbox" name="bpnss10" value="2" {% if user.bpnss10 == 2 %}checked{% endif %}>2<br></td>
+                  <td><input type="checkbox" name="bpnss10" value="3" {% if user.bpnss10 == 3 %}checked{% endif %}>3<br></td>
+                  <td><input type="checkbox" name="bpnss10" value="4" {% if user.bpnss10 == 4 %}checked{% endif %}>4<br></td>
+                  <td><input type="checkbox" name="bpnss10" value="5" {% if user.bpnss10 == 5 %}checked{% endif %}>5<br></td>
+                  <td><input type="checkbox" name="bpnss10" value="6" {% if user.bpnss10 == 6 %}checked{% endif %}>6<br></td>
+                  <td><input type="checkbox" name="bpnss10" value="7" {% if user.bpnss10 == 7 %}checked{% endif %}>7<br></td>
+               </tr>
+               <tr>
+                  <td>11 - Na minha vida diária, frequentemente tenho que fazer o que me mandam.</td>
+                  <td><input type="checkbox" name="bpnss11" value="1" {% if user.bpnss11 == 1 %}checked{% endif %}>1<br></td>
+                  <td><input type="checkbox" name="bpnss11" value="2" {% if user.bpnss11 == 2 %}checked{% endif %}>2<br></td>
+                  <td><input type="checkbox" name="bpnss11" value="3" {% if user.bpnss11 == 3 %}checked{% endif %}>3<br></td>
+                  <td><input type="checkbox" name="bpnss11" value="4" {% if user.bpnss11 == 4 %}checked{% endif %}>4<br></td>
+                  <td><input type="checkbox" name="bpnss11" value="5" {% if user.bpnss11 == 5 %}checked{% endif %}>5<br></td>
+                  <td><input type="checkbox" name="bpnss11" value="6" {% if user.bpnss11 == 6 %}checked{% endif %}>6<br></td>
+                  <td><input type="checkbox" name="bpnss11" value="7" {% if user.bpnss11 == 7 %}checked{% endif %}>7<br></td>
+               </tr>
+               <tr>
+                  <td>12 - As pessoas em minha vida se preocupam comigo.</td>
+                  <td><input type="checkbox" name="bpnss12" value="1" {% if user.bpnss12 == 1 %}checked{% endif %}>1<br></td>
+                  <td><input type="checkbox" name="bpnss12" value="2" {% if user.bpnss12 == 2 %}checked{% endif %}>2<br></td>
+                  <td><input type="checkbox" name="bpnss12" value="3" {% if user.bpnss12 == 3 %}checked{% endif %}>3<br></td>
+                  <td><input type="checkbox" name="bpnss12" value="4" {% if user.bpnss12 == 4 %}checked{% endif %}>4<br></td>
+                  <td><input type="checkbox" name="bpnss12" value="5" {% if user.bpnss12 == 5 %}checked{% endif %}>5<br></td>
+                  <td><input type="checkbox" name="bpnss12" value="6" {% if user.bpnss12 == 6 %}checked{% endif %}>6<br></td>
+                  <td><input type="checkbox" name="bpnss12" value="7" {% if user.bpnss12 == 7 %}checked{% endif %}>7<br></td>
+               </tr>
+               <tr>
+                  <td>13 - Na maioria dos dias, sinto-me realizado com o que faço.</td>
+                  <td><input type="checkbox" name="bpnss13" value="1" {% if user.bpnss13 == 1 %}checked{% endif %}>1<br></td>
+                  <td><input type="checkbox" name="bpnss13" value="2" {% if user.bpnss13 == 2 %}checked{% endif %}>2<br></td>
+                  <td><input type="checkbox" name="bpnss13" value="3" {% if user.bpnss13 == 3 %}checked{% endif %}>3<br></td>
+                  <td><input type="checkbox" name="bpnss13" value="4" {% if user.bpnss13 == 4 %}checked{% endif %}>4<br></td>
+                  <td><input type="checkbox" name="bpnss13" value="5" {% if user.bpnss13 == 5 %}checked{% endif %}>5<br></td>
+                  <td><input type="checkbox" name="bpnss13" value="6" {% if user.bpnss13 == 6 %}checked{% endif %}>6<br></td>
+                  <td><input type="checkbox" name="bpnss13" value="7" {% if user.bpnss13 == 7 %}checked{% endif %}>7<br></td>
+               </tr>
+               <tr>
+                  <td>14 - As pessoas com quem interajo diariamente tendem a levar em consideração meus sentimentos.</td>
+                  <td><input type="checkbox" name="bpnss14" value="1" {% if user.bpnss14 == 1 %}checked{% endif %}>1<br></td>
+                  <td><input type="checkbox" name="bpnss14" value="2" {% if user.bpnss14 == 2 %}checked{% endif %}>2<br></td>
+                  <td><input type="checkbox" name="bpnss14" value="3" {% if user.bpnss14 == 3 %}checked{% endif %}>3<br></td>
+                  <td><input type="checkbox" name="bpnss14" value="4" {% if user.bpnss14 == 4 %}checked{% endif %}>4<br></td>
+                  <td><input type="checkbox" name="bpnss14" value="5" {% if user.bpnss14 == 5 %}checked{% endif %}>5<br></td>
+                  <td><input type="checkbox" name="bpnss14" value="6" {% if user.bpnss14 == 6 %}checked{% endif %}>6<br></td>
+                  <td><input type="checkbox" name="bpnss14" value="7" {% if user.bpnss14 == 7 %}checked{% endif %}>7<br></td>
+               </tr>
+               <tr>
+                  <td>15 - Na minha vida, não tenho muita chance de mostrar o quanto sou capaz.</td>
+                  <td><input type="checkbox" name="bpnss15" value="1" {% if user.bpnss15 == 1 %}checked{% endif %}>1<br></td>
+                  <td><input type="checkbox" name="bpnss15" value="2" {% if user.bpnss15 == 2 %}checked{% endif %}>2<br></td>
+                  <td><input type="checkbox" name="bpnss15" value="3" {% if user.bpnss15 == 3 %}checked{% endif %}>3<br></td>
+                  <td><input type="checkbox" name="bpnss15" value="4" {% if user.bpnss15 == 4 %}checked{% endif %}>4<br></td>
+                  <td><input type="checkbox" name="bpnss15" value="5" {% if user.bpnss15 == 5 %}checked{% endif %}>5<br></td>
+                  <td><input type="checkbox" name="bpnss15" value="6" {% if user.bpnss15 == 6 %}checked{% endif %}>6<br></td>
+                  <td><input type="checkbox" name="bpnss15" value="7" {% if user.bpnss15 == 7 %}checked{% endif %}>7<br></td>
+               </tr>
+               <tr>
+                  <td>16 - Não sou próximo de muitas pessoas.</td>
+                  <td><input type="checkbox" name="bpnss16" value="1" {% if user.bpnss16 == 1 %}checked{% endif %}>1<br></td>
+                  <td><input type="checkbox" name="bpnss16" value="2" {% if user.bpnss16 == 2 %}checked{% endif %}>2<br></td>
+                  <td><input type="checkbox" name="bpnss16" value="3" {% if user.bpnss16 == 3 %}checked{% endif %}>3<br></td>
+                  <td><input type="checkbox" name="bpnss16" value="4" {% if user.bpnss16 == 4 %}checked{% endif %}>4<br></td>
+                  <td><input type="checkbox" name="bpnss16" value="5" {% if user.bpnss16 == 5 %}checked{% endif %}>5<br></td>
+                  <td><input type="checkbox" name="bpnss16" value="6" {% if user.bpnss16 == 6 %}checked{% endif %}>6<br></td>
+                  <td><input type="checkbox" name="bpnss16" value="7" {% if user.bpnss16 == 7 %}checked{% endif %}>7<br></td>
+               </tr>
+               <tr>
+                <td>17 - Sinto que posso ser eu mesmo em minhas situações diárias.</td>
+                <td><input type="checkbox" name="bpnss17" value="1" {% if user.bpnss17 == 1 %}checked{% endif %}>1<br></td>
+                <td><input type="checkbox" name="bpnss17" value="2" {% if user.bpnss17 == 2 %}checked{% endif %}>2<br></td>
+                <td><input type="checkbox" name="bpnss17" value="3" {% if user.bpnss17 == 3 %}checked{% endif %}>3<br></td>
+                <td><input type="checkbox" name="bpnss17" value="4" {% if user.bpnss17 == 4 %}checked{% endif %}>4<br></td>
+                <td><input type="checkbox" name="bpnss17" value="5" {% if user.bpnss17 == 5 %}checked{% endif %}>5<br></td>
+                <td><input type="checkbox" name="bpnss17" value="6" {% if user.bpnss17 == 6 %}checked{% endif %}>6<br></td>
+                <td><input type="checkbox" name="bpnss17" value="7" {% if user.bpnss17 == 7 %}checked{% endif %}>7<br></td>
+             </tr>
+             <tr>
+                <td>18 - As pessoas com quem interajo regularmente não parecem gostar muito de mim.</td>
+                <td><input type="checkbox" name="bpnss18" value="1" {% if user.bpnss18 == 1 %}checked{% endif %}>1<br></td>
+                <td><input type="checkbox" name="bpnss18" value="2" {% if user.bpnss18 == 2 %}checked{% endif %}>2<br></td>
+                <td><input type="checkbox" name="bpnss18" value="3" {% if user.bpnss18 == 3 %}checked{% endif %}>3<br></td>
+                <td><input type="checkbox" name="bpnss18" value="4" {% if user.bpnss18 == 4 %}checked{% endif %}>4<br></td>
+                <td><input type="checkbox" name="bpnss18" value="5" {% if user.bpnss18 == 5 %}checked{% endif %}>5<br></td>
+                <td><input type="checkbox" name="bpnss18" value="6" {% if user.bpnss18 == 6 %}checked{% endif %}>6<br></td>
+                <td><input type="checkbox" name="bpnss18" value="7" {% if user.bpnss18 == 7 %}checked{% endif %}>7<br></td>
+             </tr>
+             <tr>
+                <td>19 - Frequentemente não me sinto muito capaz.</td>
+                <td><input type="checkbox" name="bpnss19" value="1" {% if user.bpnss19 == 1 %}checked{% endif %}>1<br></td>
+                <td><input type="checkbox" name="bpnss19" value="2" {% if user.bpnss19 == 2 %}checked{% endif %}>2<br></td>
+                <td><input type="checkbox" name="bpnss19" value="3" {% if user.bpnss19 == 3 %}checked{% endif %}>3<br></td>
+                <td><input type="checkbox" name="bpnss19" value="4" {% if user.bpnss19 == 4 %}checked{% endif %}>4<br></td>
+                <td><input type="checkbox" name="bpnss19" value="5" {% if user.bpnss19 == 5 %}checked{% endif %}>5<br></td>
+                <td><input type="checkbox" name="bpnss19" value="6" {% if user.bpnss19 == 6 %}checked{% endif %}>6<br></td>
+                <td><input type="checkbox" name="bpnss19" value="7" {% if user.bpnss19 == 7 %}checked{% endif %}>7<br></td>
+             </tr>
+             <tr>
+                <td>20 - Não tenho muitas oportunidades de decidir por mim mesmo como fazer as coisas no meu dia a dia.</td>
+                <td><input type="checkbox" name="bpnss20" value="1" {% if user.bpnss20 == 1 %}checked{% endif %}>1<br></td>
+                <td><input type="checkbox" name="bpnss20" value="2" {% if user.bpnss20 == 2 %}checked{% endif %}>2<br></td>
+                <td><input type="checkbox" name="bpnss20" value="3" {% if user.bpnss20 == 3 %}checked{% endif %}>3<br></td>
+                <td><input type="checkbox" name="bpnss20" value="4" {% if user.bpnss20 == 4 %}checked{% endif %}>4<br></td>
+                <td><input type="checkbox" name="bpnss20" value="5" {% if user.bpnss20 == 5 %}checked{% endif %}>5<br></td>
+                <td><input type="checkbox" name="bpnss20" value="6" {% if user.bpnss20 == 6 %}checked{% endif %}>6<br></td>
+                <td><input type="checkbox" name="bpnss20" value="7" {% if user.bpnss20 == 7 %}checked{% endif %}>7<br></td>
+             </tr>
+             <tr>
+                <td>21 - As pessoas geralmente são muito amigáveis comigo</td>
+                <td><input type="checkbox" name="bpnss21" value="1" {% if user.bpnss21 == 1 %}checked{% endif %}>1<br></td>
+                <td><input type="checkbox" name="bpnss21" value="2" {% if user.bpnss21 == 2 %}checked{% endif %}>2<br></td>
+                <td><input type="checkbox" name="bpnss21" value="3" {% if user.bpnss21 == 3 %}checked{% endif %}>3<br></td>
+                <td><input type="checkbox" name="bpnss21" value="4" {% if user.bpnss21 == 4 %}checked{% endif %}>4<br></td>
+                <td><input type="checkbox" name="bpnss21" value="5" {% if user.bpnss21 == 5 %}checked{% endif %}>5<br></td>
+                <td><input type="checkbox" name="bpnss21" value="6" {% if user.bpnss21 == 6 %}checked{% endif %}>6<br></td>
+                <td><input type="checkbox" name="bpnss21" value="7" {% if user.bpnss21 == 7 %}checked{% endif %}>7<br></td>
+             </tr>
+               <br>
+               
+               </tbody>
+            </table>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+
+         </form>
+      </div>
+   </body>
+   <small class="text-muted">
+      Return menu <a href="{{ url_for('index') }}" class="text-right">Home</a>
+  </small>  <footer class="main-footer">
+   <a href="{{ url_for('logout') }}">Logout</a>
+   <strong>Copyright &copy; 2023 <a href="https://pos.ucpel.edu.br/ppgeec/">uDemos</a>.</strong>
+   All rights reserved.
+   <div class="float-right d-none d-sm-inline-block">
+      <b>Versão</b> 1.0.1
+   </div>
+</footer>
+
+</footer>
+<!-- Control Sidebar -->
+<aside class="control-sidebar control-sidebar-dark">
+   <!-- Control sidebar content goes here -->
+</aside>
+<!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+<!-- jQuery -->
+<script src="/static/plugins/jquery/jquery.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="/static/plugins/jquery-ui/jquery-ui.min.js"></script>
+<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+<script>
+   $.widget.bridge('uibutton', $.ui.button)
+</script>
+<!-- Bootstrap 4 -->
+<script src="/static/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- ChartJS -->
+<script src="/static/plugins/chart.js/Chart.min.js"></script>
+<!-- Sparkline -->
+<script src="/static/plugins/sparklines/sparkline.js"></script>
+<!-- JQVMap -->
+<script src="/static/plugins/jqvmap/jquery.vmap.min.js"></script>
+<script src="/static/plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+<!-- jQuery Knob Chart -->
+<script src="/static/plugins/jquery-knob/jquery.knob.min.js"></script>
+<!-- daterangepicker -->
+<script src="/static/plugins/moment/moment.min.js"></script>
+<script src="/static/plugins/daterangepicker/daterangepicker.js"></script>
+<!-- Tempusdominus Bootstrap 4 -->
+<script src="/static/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+<!-- Summernote -->
+<script src="/static/plugins/summernote/summernote-bs4.min.js"></script>
+<!-- overlayScrollbars -->
+<script src="/static/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<!-- AdminLTE App -->
+<script src="/static/dist/js/adminlte.js"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="/static/dist/js/pages/dashboard.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="/static/dist/js/demo.js"></script>
+</body>
+{% endblock %}

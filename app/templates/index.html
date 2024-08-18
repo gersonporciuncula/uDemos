@@ -1,0 +1,295 @@
+{% extends 'sidebar.html' %}
+{% block conteudo %}
+<body class="hold-transition sidebar-mini layout-fixed">
+   <!-- Content Wrapper. Contains page content -->
+   <div class="content-wrapper">
+      <!-- Content Header (Page header) -->
+      <div class="content-header">
+         <div class="container-fluid">
+            <div class="row mb-2">
+               <div class="col-sm-6">
+                  <h1 class="m-0 text-dark">Bem vindo ao uDemos</h1>
+               </div>
+               <!-- /.col -->
+               <div class="col-sm-6">
+                  <ol class="breadcrumb float-sm-right">
+                     <li class="nav-item">
+                        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+                      </li>
+                     <li class="breadcrumb-item"><a href="#">Home</a></li>
+                     <li class="breadcrumb-item active">Dashboard</li>
+                  </ol>
+               </div>
+               <!-- /.col -->
+            </div>
+            <!-- /.row -->
+         </div>
+         <!-- /.container-fluid -->
+      </div>
+      <!-- /.content-header -->
+      <!-- Main content -->
+      <section class="content">
+         <div class="container-fluid">
+            <!-- Small boxes (Stat box) -->
+            <div class="row">
+               <div class="col-lg-6 col-sm-6">
+                  <!-- small box -->
+                  <div class="small-box bg-info">
+                     <div class="inner">
+                        <img src="static/dist/img/virus.png" alt="VIRUS Logo">
+                        <H2>O que é COVID-19?</H2>
+                     </div>
+                     <a href='#modalCovid' data-toggle="modal" title='Editar' small-box-footer">Clique para saber mais o que é esta doença<i
+                        class="fas fa-arrow-circle-right"></i></a>
+                     <!-- Modal -->
+                     <div class="modal fade" id="modalCovid" tabindex="-1" role="dialog" aria-labelledby="modalCovid" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                           <div class="modal-content">
+                              <div class="modal-header">
+                                 <img src="static/dist/img/virus.png" alt="Treichel Logo"
+                                    style="opacity: .8"><br>
+                                 <font color="black">
+                                    <h5 class="modal-title" id="modalCovid">O que é Covid-19?</h5>
+                                 </font>
+                                 <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                 <span aria-hidden="true">&times;</span>
+                                 </button>
+                              </div>
+                              <div class="modal-body">
+                                 <font color="black">A Covid-19 é uma infecção respiratória aguda causada pelo coronavírus SARS-CoV-2, potencialmente grave, de elevada transmissibilidade e de distribuição global.
+                                 O SARS-CoV-2 é um betacoronavírus descoberto em amostras de lavado broncoalveolar obtidas de pacientes com pneumonia de causa desconhecida na cidade de Wuhan, província de Hubei, China, em dezembro de 2019. Pertence ao subgênero Sarbecovírus da família Coronaviridae e é o sétimo coronavírus conhecido a infectar seres humanos.</font>
+                              </div>
+                              <div class="modal-footer">
+                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- FIM MODAL-->
+                  </div>
+               </div>
+               <!-- FIM COVID -->
+               <div class="col-lg-6 col-6">
+                  <!-- small box -->
+                  <div class="small-box bg-success">
+                     <div class="inner">
+                        <img src="static/dist/img/sick.png" alt="VIRUS Logo">
+                        <H2>Quais os sintomas?</H2>
+                     </div>
+                     <!--        <a href="covid19.html" small-box-footer">More info form<i
+                        class="fas fa-arrow-circle-right"></i></a> -->
+                     <a href='#modalSintomas' data-toggle="modal" title='Editar' small-box-footer">Clique para saber mais sobre os principais sintomas<i
+                        class="fas fa-arrow-circle-right"></i></a>
+                     <!-- Botão para acionar modal -->
+                     <!-- Modal -->
+                     <!-- Modal -->
+                     <div class="modal fade" id="modalSintomas" tabindex="-1" role="dialog" aria-labelledby="modalSintomas" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                           <div class="modal-content">
+                              <div class="modal-header">
+                                 <img src="static/dist/img/sick.png" alt="sintomas Logo"
+                                    style="opacity: .8"><br>
+                                 <font color="black">
+                                    <h5 class="modal-title" id="modalSintomas">Quais são os sintomas?</h5>
+                                 </font>
+                                 <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                 <span aria-hidden="true">&times;</span>
+                                 </button>
+                              </div>
+                              <div class="modal-body">
+                                 <font color="black">
+                                    Em geral, os primeiros sintomas da covid-19 podem incluir:
+                                    <ul>
+                                       <li>
+                                          Tosse seca e persistente;
+                                       </li>
+                                       <li>
+                                          Febre alta, acima de 38ºC;
+                                       </li>
+                                       <li>Cansaço excessivo;</li>
+                                       <li>Dor de cabeça;</li>
+                                       <li>
+                                          Coriza ou nariz entupido;
+                                       </li>
+                                       <li>
+                                          Alterações do trânsito intestinal, principalmente diarreia;
+                                       </li>
+                                       <li>
+                                          Inflamação na garganta;
+                                       </li>
+                                       <li>
+                                          Perda de olfato e paladar;
+                                       </li>
+                                       <li>
+                                          “Dedos de covid”: dor intensa, coceira, inchaço 
+                                          e aparecimento de bolhas nos dedos das mãos e dos pés.
+                                       </li>
+                                    </ul>
+                                    Os sintomas aparecem de 2 a 14 dias após a exposição ao 
+                                    vírus, podendo ser confundidos com os de uma gripe comum.
+                                    <p>Para a maioria da população, os sintomas são suportáveis e 
+                                       podem ser facilmente tratados. No entanto, uma parcela menor da 
+                                       população pode apresentar sintomas graves, como pneumonia, síndrome respiratória aguda grave, insuficiência renal e até morte.
+                                    </p>
+                                    <p>
+                                       Dessa forma, apesar do avanço das vacinas, é necessário atenção especial com idosos, crianças e pacientes oncológicos,
+                                       portadores de imunodeficiências, doenças respiratórias e outras doenças, já que, nestes, o risco de complicações pelo covid-19 é bem maior.
+                                    </p>
+                                 </font>
+                              </div>
+                              <div class="modal-footer">
+                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- fim Modal--> 
+                  </div>
+               </div>
+               <!-- ./col -->
+               <div class="col-lg-6 col-12">
+                  <!-- small box -->
+                  <div class="small-box bg-warning">
+                    <div class="inner">
+                        <img src="static/dist/img/transmission.png" alt="transmission Logo">
+                        <H2>Como se transmite?</H2>
+                     </div><a href='#modalTrasmissao' data-toggle="modal" title='Editar' small-box-footer">Clique para saber mais sobre as formas de transmissão<i
+                        class="fas fa-arrow-circle-right"></i></a>
+                     <!-- Modal -->
+                     <div class="modal fade" id="modalTrasmissao" tabindex="-1" role="dialog" aria-labelledby="modalTrasmissao" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                           <div class="modal-content">
+                              <div class="modal-header">
+                                 <img src="static/dist/img/transmission.png" alt="Trasmissao Logo"
+                                    style="opacity: .8"><br>
+                                 <font color="black">
+                                    <h5 class="modal-title" id="modalTrasmissao">Como se transmite?</h5>
+                                 </font>
+                                 <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                 <span aria-hidden="true">&times;</span>
+                                 </button>
+                              </div>
+                              <div class="modal-body">
+                                 <font color="black">
+                                    De acordo com as evidências mais atuais, o SARS-CoV-2, da mesma forma que outros vírus respiratórios, 
+                                    é transmitido principalmente por três modos: contato, gotículas ou por aerossol.
+                                    <ul>
+                                   <li>A transmissão por contato é a transmissão da infecção por meio do contato direto com uma pessoa infectada (por exemplo, durante um aperto de mão seguido do toque nos olhos, nariz ou boca), ou com objetos e superfícies contaminados (fômites).</li>
+                                   <li>A transmissão por gotículas é a transmissão da infecção por meio da exposição a gotículas respiratórias expelidas, contendo vírus, por uma pessoa infectada quando ela tosse ou espirra, principalmente quando ela se encontra a menos de 1 metro de distância da outra.</li>
+                                    <li>A transmissão por aerossol é a transmissão da infecção por meio de gotículas respiratórias menores (aerossóis) contendo vírus e que podem permanecer suspensas no ar, serem levadas por distâncias maiores que 1 metro e por períodos mais longos (geralmente horas).</li>
+                                 </ul>
+                                 </font>
+                              </div>
+                              <div class="modal-footer">
+                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- FIM MODAL-->
+                  </div>
+               </div>
+
+               <div class="col-lg-6 col-12">
+                  <!-- small box -->
+                  <div class="small-box bg-danger">
+                     <div class="inner">
+                        <img src="static/dist/img/projeto.png" alt="epidemia Logo">
+                        <H2>Projeto Epidemia</H2>
+                     </div><a href='#modalEpidemia' data-toggle="modal" title='Editar' small-box-footer">Clique para saber mais sobre o Projeto Epidemia<i
+                        class="fas fa-arrow-circle-right"></i></a>
+                     <!-- Modal -->
+                     <div class="modal fade" id="modalEpidemia" tabindex="-1" role="dialog" aria-labelledby="modalEpidemia" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                           <div class="modal-content">
+                              <div class="modal-header">
+                                 <img src="static/dist/img/projeto.png" alt="Trasmissao Logo"
+                                    style="opacity: .8"><br>
+                                 <font color="black">
+                                    <h5 class="modal-title" id="modalTrasmissao">Projeto Epidemia</h5>
+                                 </font>
+                                 <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                 <span aria-hidden="true">&times;</span>
+                                 </button>
+                              </div>
+                              <div class="modal-body">
+                                 <font color="black">
+                                    O projeto Epidemia está vinculado ao Mestrado do Programa de Pós-graduação em Engenharia Eletrônica e 
+                                    Computação -- MEEC da Universidade Católica de Pelotas --UCPEL que tem como objetivo a integração de 
+                                    tecnologias ubíquas para promover a motivação dos indivíduos na prevenção de doenças epidemiológicas transmissíveis.
+                                    <p>O projeto conta com uma equipe interdisciplinar composta por estudantes de graduação em Engenharia de Computação 
+                                       (presencial), graduação em Análise e Desenvolvimento de Sistemas (EaD), Medicina (presencial) e Mestrado em Engenharia
+                                        Eletrônica e Computação.</p>
+                                 </font>
+                              </div>
+                              <div class="modal-footer">
+                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                              </div>
+                           </div>
+                        </div>
+                    
+               </div>
+               <!-- ./col -->
+            </div>
+            <!-- /.direct-chat-pane -->
+         </div>
+         <!-- /.card-body -->
+         <!-- /.card-footer-->
+   </div>
+   <!--/.direct-chat -->
+   <!-- TO DO List -->
+   </section>
+   <!-- /.content -->
+   </div>
+   <!-- /.content-wrapper -->
+   <footer class="main-footer">
+      <a href="{{ url_for('logout') }}">Logout</a>
+      <strong>Copyright &copy; 2023 <a href="https://pos.ucpel.edu.br/ppgeec/">uDemos</a>.</strong>
+      All rights reserved.
+      <div class="float-right d-none d-sm-inline-block">
+         <b>Versão</b> 1.0.1
+      </div>
+   </footer>
+   <!-- Control Sidebar -->
+   <aside class="control-sidebar control-sidebar-dark">
+      <!-- Control sidebar content goes here -->
+   </aside>
+   <!-- /.control-sidebar -->
+   </div>
+   <!-- ./wrapper -->
+   <!-- jQuery -->
+   <script src="/static/plugins/jquery/jquery.min.js"></script>
+   <!-- jQuery UI 1.11.4 -->
+   <script src="/static/plugins/jquery-ui/jquery-ui.min.js"></script>
+   <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+   <script>
+      $.widget.bridge('uibutton', $.ui.button)
+   </script>
+   <!-- Bootstrap 4 -->
+   <script src="/static/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+   <!-- ChartJS -->
+   <script src="/static/plugins/chart.js/Chart.min.js"></script>
+   <!-- Sparkline -->
+   <script src="/static/plugins/sparklines/sparkline.js"></script>
+   <!-- JQVMap -->
+   <script src="/static/plugins/jqvmap/jquery.vmap.min.js"></script>
+   <script src="/static/plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+   <!-- jQuery Knob Chart -->
+   <script src="/static/plugins/jquery-knob/jquery.knob.min.js"></script>
+   <!-- daterangepicker -->
+   <script src="/static/plugins/moment/moment.min.js"></script>
+   <script src="/static/plugins/daterangepicker/daterangepicker.js"></script>
+   <!-- Tempusdominus Bootstrap 4 -->
+   <script src="/static/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+   <!-- Summernote -->
+   <script src="/static/plugins/summernote/summernote-bs4.min.js"></script>
+   <!-- overlayScrollbars -->
+   <script src="/static/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+   <!-- AdminLTE App -->
+   <script src="/static/dist/js/adminlte.js"></script>
+   <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+   <script src="/static/dist/js/pages/dashboard.js"></script>
+   <!-- AdminLTE for demo purposes -->
+   <script src="/static/dist/js/demo.js"></script>
+</body>
+{% endblock %}

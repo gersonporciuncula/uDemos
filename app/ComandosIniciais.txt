@@ -1,0 +1,14 @@
+Comandos para criar banco
+
+flask db init
+
+flask db migrate -m "criacao_tabelas"
+
+flask db upgrade
+
+----
+
+
+
+export FLASK_APP=app.py
+export FLASK_DEBUG=1

@@ -1,0 +1,246 @@
+{% extends 'sidebar.html' %}
+{% block conteudo %}
+   <body>
+      <div class="container">
+         <h5>Ola. Leia cada item com atenção. Usando a escala abaixo, por favor, circule o número que melhor descreve o
+            razão pela qual você está atualmente envolvido nesta atividade.
+         </h2>
+         <form method="POST" action="">
+            <table class="table table-striped">
+            <thead>
+               <tr>
+                  <th>Use a escala para responder: 0 não corresponde...4 corresponde moderadamente...7 corresponde exatamente </th>
+                  <th>1</th>
+                  <th>2</th>
+                  <th>3</th>
+                  <th>4</th>
+                  <th>5</th>
+                  <th>6</th>
+                  <th>7</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <td>1 - Porque penso que esta atividade é interessante?</td>
+                  <td><input type="checkbox" name="sims1" value="1" {% if user.sims1 == 1 %}checked{% endif %}>1<br></td>
+                  <td><input type="checkbox" name="sims1" value="2" {% if user.sims1 == 2 %}checked{% endif %}>2<br></td>
+                  <td><input type="checkbox" name="sims1" value="3" {% if user.sims1 == 3 %}checked{% endif %}>3<br></td>
+                  <td><input type="checkbox" name="sims1" value="4" {% if user.sims1 == 4 %}checked{% endif %}>4<br></td>
+                  <td><input type="checkbox" name="sims1" value="5" {% if user.sims1 == 5 %}checked{% endif %}>5<br></td>
+                  <td><input type="checkbox" name="sims1" value="6" {% if user.sims1 == 6 %}checked{% endif %}>6<br></td>
+                  <td><input type="checkbox" name="sims1" value="7" {% if user.sims1 == 7 %}checked{% endif %}>7<br></td>
+               </tr>
+               <tr>
+                  <td>2 - Porque é para o meu próprio bem?</td>
+                  <td><input type="checkbox" name="sims2" value="1" {% if user.sims2 == 1 %}checked{% endif %}>1<br></td>
+                  <td><input type="checkbox" name="sims2" value="2" {% if user.sims2 == 2 %}checked{% endif %}>2<br></td>
+                  <td><input type="checkbox" name="sims2" value="3" {% if user.sims2 == 3 %}checked{% endif %}>3<br></td>
+                  <td><input type="checkbox" name="sims2" value="4" {% if user.sims2 == 4 %}checked{% endif %}>4<br></td>
+                  <td><input type="checkbox" name="sims2" value="5" {% if user.sims2 == 5 %}checked{% endif %}>5<br></td>
+                  <td><input type="checkbox" name="sims2" value="6" {% if user.sims2 == 6 %}checked{% endif %}>6<br></td>
+                  <td><input type="checkbox" name="sims2" value="7" {% if user.sims2 == 7 %}checked{% endif %}>7<br></td>
+               </tr>
+               <tr>
+                  <td>3 - Porque eu devo fazer</td>
+                  <td><input type="checkbox" name="sims3" value="1" {% if user.sims3 == 1 %}checked{% endif %}>1<br></td>
+                  <td><input type="checkbox" name="sims3" value="2" {% if user.sims3 == 2 %}checked{% endif %}>2<br></td>
+                  <td><input type="checkbox" name="sims3" value="3" {% if user.sims3 == 3 %}checked{% endif %}>3<br></td>
+                  <td><input type="checkbox" name="sims3" value="4" {% if user.sims3 == 4 %}checked{% endif %}>4<br></td>
+                  <td><input type="checkbox" name="sims3" value="5" {% if user.sims3 == 5 %}checked{% endif %}>5<br></td>
+                  <td><input type="checkbox" name="sims3" value="6" {% if user.sims3 == 6 %}checked{% endif %}>6<br></td>
+                  <td><input type="checkbox" name="sims3" value="7" {% if user.sims3 == 7 %}checked{% endif %}>7<br></td>
+               </tr>
+               <tr>
+                  <td>4 - Pode ser que existam boas razões para realizar esta atividade, mas pessoalmente não vejo nenhuma</td>
+                  <td><input type="checkbox" name="sims4" value="1" {% if user.sims4 == 1 %}checked{% endif %}>1<br></td>
+                  <td><input type="checkbox" name="sims4" value="2" {% if user.sims4 == 2 %}checked{% endif %}>2<br></td>
+                  <td><input type="checkbox" name="sims4" value="3" {% if user.sims4 == 3 %}checked{% endif %}>3<br></td>
+                  <td><input type="checkbox" name="sims4" value="4" {% if user.sims4 == 4 %}checked{% endif %}>4<br></td>
+                  <td><input type="checkbox" name="sims4" value="5" {% if user.sims4 == 5 %}checked{% endif %}>5<br></td>
+                  <td><input type="checkbox" name="sims4" value="6" {% if user.sims4 == 6 %}checked{% endif %}>6<br></td>
+                  <td><input type="checkbox" name="sims4" value="7" {% if user.sims4 == 7 %}checked{% endif %}>7<br></td>
+               </tr>
+               <tr>
+                  <td>5 - Porque considero que esta atividade é agradável</td>
+                  <td><input type="checkbox" name="sims5" value="1" {% if user.sims5 == 1 %}checked{% endif %}>1<br></td>
+                  <td><input type="checkbox" name="sims5" value="2" {% if user.sims5 == 2 %}checked{% endif %}>2<br></td>
+                  <td><input type="checkbox" name="sims5" value="3" {% if user.sims5 == 3 %}checked{% endif %}>3<br></td>
+                  <td><input type="checkbox" name="sims5" value="4" {% if user.sims5 == 4 %}checked{% endif %}>4<br></td>
+                  <td><input type="checkbox" name="sims5" value="5" {% if user.sims5 == 5 %}checked{% endif %}>5<br></td>
+                  <td><input type="checkbox" name="sims5" value="6" {% if user.sims5 == 6 %}checked{% endif %}>6<br></td>
+                  <td><input type="checkbox" name="sims5" value="7" {% if user.sims5 == 7 %}checked{% endif %}>7<br></td>
+               </tr>
+               <tr>
+                  <td>6 - Porque penso que esta atividade é boa para mim</td>
+                  <td><input type="checkbox" name="sims6" value="1" {% if user.sims6 == 1 %}checked{% endif %}>1<br></td>
+                  <td><input type="checkbox" name="sims6" value="2" {% if user.sims6 == 2 %}checked{% endif %}>2<br></td>
+                  <td><input type="checkbox" name="sims6" value="3" {% if user.sims6 == 3 %}checked{% endif %}>3<br></td>
+                  <td><input type="checkbox" name="sims6" value="4" {% if user.sims6 == 4 %}checked{% endif %}>4<br></td>
+                  <td><input type="checkbox" name="sims6" value="5" {% if user.sims6 == 5 %}checked{% endif %}>5<br></td>
+                  <td><input type="checkbox" name="sims6" value="6" {% if user.sims6 == 6 %}checked{% endif %}>6<br></td>
+                  <td><input type="checkbox" name="sims6" value="7" {% if user.sims6 == 7 %}checked{% endif %}>7<br></td>
+               </tr>
+               <tr>
+                  <td>7 - Porque é algo que eu tenho de fazer</td>
+                  <td><input type="checkbox" name="sims7" value="1" {% if user.sims7 == 1 %}checked{% endif %}>1<br></td>
+                  <td><input type="checkbox" name="sims7" value="2" {% if user.sims7 == 2 %}checked{% endif %}>2<br></td>
+                  <td><input type="checkbox" name="sims7" value="3" {% if user.sims7 == 3 %}checked{% endif %}>3<br></td>
+                  <td><input type="checkbox" name="sims7" value="4" {% if user.sims7 == 4 %}checked{% endif %}>4<br></td>
+                  <td><input type="checkbox" name="sims7" value="5" {% if user.sims7 == 5 %}checked{% endif %}>5<br></td>
+                  <td><input type="checkbox" name="sims7" value="6" {% if user.sims7 == 6 %}checked{% endif %}>6<br></td>
+                  <td><input type="checkbox" name="sims7" value="7" {% if user.sims7 == 7 %}checked{% endif %}>7<br></td>
+               </tr>
+               <tr>
+                  <td>8 - Eu faço esta atividade, mas não tenho certeza se vale a pena</td>
+                  <td><input type="checkbox" name="sims8" value="1" {% if user.sims8 == 1 %}checked{% endif %}>1<br></td>
+                  <td><input type="checkbox" name="sims8" value="2" {% if user.sims8 == 2 %}checked{% endif %}>2<br></td>
+                  <td><input type="checkbox" name="sims8" value="3" {% if user.sims8 == 3 %}checked{% endif %}>3<br></td>
+                  <td><input type="checkbox" name="sims8" value="4" {% if user.sims8 == 4 %}checked{% endif %}>4<br></td>
+                  <td><input type="checkbox" name="sims8" value="5" {% if user.sims8 == 5 %}checked{% endif %}>5<br></td>
+                  <td><input type="checkbox" name="sims8" value="6" {% if user.sims8 == 6 %}checked{% endif %}>6<br></td>
+                  <td><input type="checkbox" name="sims8" value="7" {% if user.sims8 == 7 %}checked{% endif %}>7<br></td>
+               </tr>
+               <tr>
+                  <td>9 - Porque esta atividade é divertida</td>
+                  <td><input type="checkbox" name="sims9" value="1" {% if user.sims9 == 1 %}checked{% endif %}>1<br></td>
+                  <td><input type="checkbox" name="sims9" value="2" {% if user.sims9 == 2 %}checked{% endif %}>2<br></td>
+                  <td><input type="checkbox" name="sims9" value="3" {% if user.sims9 == 3 %}checked{% endif %}>3<br></td>
+                  <td><input type="checkbox" name="sims9" value="4" {% if user.sims9 == 4 %}checked{% endif %}>4<br></td>
+                  <td><input type="checkbox" name="sims9" value="5" {% if user.sims9 == 5 %}checked{% endif %}>5<br></td>
+                  <td><input type="checkbox" name="sims9" value="6" {% if user.sims9 == 6 %}checked{% endif %}>6<br></td>
+                  <td><input type="checkbox" name="sims9" value="7" {% if user.sims9 == 7 %}checked{% endif %}>7<br></td>
+               </tr>
+               <tr>
+                  <td>10 - Por decisão pessoal</td>
+                  <td><input type="checkbox" name="sims10" value="1" {% if user.sims10 == 1 %}checked{% endif %}>1<br></td>
+                  <td><input type="checkbox" name="sims10" value="2" {% if user.sims10 == 2 %}checked{% endif %}>2<br></td>
+                  <td><input type="checkbox" name="sims10" value="3" {% if user.sims10 == 3 %}checked{% endif %}>3<br></td>
+                  <td><input type="checkbox" name="sims10" value="4" {% if user.sims10 == 4 %}checked{% endif %}>4<br></td>
+                  <td><input type="checkbox" name="sims10" value="5" {% if user.sims10 == 5 %}checked{% endif %}>5<br></td>
+                  <td><input type="checkbox" name="sims10" value="6" {% if user.sims10 == 6 %}checked{% endif %}>6<br></td>
+                  <td><input type="checkbox" name="sims10" value="7" {% if user.sims10 == 7 %}checked{% endif %}>7<br></td>
+               </tr>
+               <tr>
+                  <td>11 - Porque não tenho escolha</td>
+                  <td><input type="checkbox" name="sims11" value="1" {% if user.sims11 == 1 %}checked{% endif %}>1<br></td>
+                  <td><input type="checkbox" name="sims11" value="2" {% if user.sims11 == 2 %}checked{% endif %}>2<br></td>
+                  <td><input type="checkbox" name="sims11" value="3" {% if user.sims11 == 3 %}checked{% endif %}>3<br></td>
+                  <td><input type="checkbox" name="sims11" value="4" {% if user.sims11 == 4 %}checked{% endif %}>4<br></td>
+                  <td><input type="checkbox" name="sims11" value="5" {% if user.sims11 == 5 %}checked{% endif %}>5<br></td>
+                  <td><input type="checkbox" name="sims11" value="6" {% if user.sims11 == 6 %}checked{% endif %}>6<br></td>
+                  <td><input type="checkbox" name="sims11" value="7" {% if user.sims11 == 7 %}checked{% endif %}>7<br></td>
+               </tr>
+               <tr>
+                  <td>12 - Não sei, não vejo o que é que está atividade me pode oferecer</td>
+                  <td><input type="checkbox" name="sims12" value="1" {% if user.sims12 == 1 %}checked{% endif %}>1<br></td>
+                  <td><input type="checkbox" name="sims12" value="2" {% if user.sims12 == 2 %}checked{% endif %}>2<br></td>
+                  <td><input type="checkbox" name="sims12" value="3" {% if user.sims12 == 3 %}checked{% endif %}>3<br></td>
+                  <td><input type="checkbox" name="sims12" value="4" {% if user.sims12 == 4 %}checked{% endif %}>4<br></td>
+                  <td><input type="checkbox" name="sims12" value="5" {% if user.sims12 == 5 %}checked{% endif %}>5<br></td>
+                  <td><input type="checkbox" name="sims12" value="6" {% if user.sims12 == 6 %}checked{% endif %}>6<br></td>
+                  <td><input type="checkbox" name="sims12" value="7" {% if user.sims12 == 7 %}checked{% endif %}>7<br></td>
+               </tr>
+               <tr>
+                  <td>13 - Porque me sinto bem quanto realizado esta atividade</td>
+                  <td><input type="checkbox" name="sims13" value="1" {% if user.sims13 == 1 %}checked{% endif %}>1<br></td>
+                  <td><input type="checkbox" name="sims13" value="2" {% if user.sims13 == 2 %}checked{% endif %}>2<br></td>
+                  <td><input type="checkbox" name="sims13" value="3" {% if user.sims13 == 3 %}checked{% endif %}>3<br></td>
+                  <td><input type="checkbox" name="sims13" value="4" {% if user.sims13 == 4 %}checked{% endif %}>4<br></td>
+                  <td><input type="checkbox" name="sims13" value="5" {% if user.sims13 == 5 %}checked{% endif %}>5<br></td>
+                  <td><input type="checkbox" name="sims13" value="6" {% if user.sims13 == 6 %}checked{% endif %}>6<br></td>
+                  <td><input type="checkbox" name="sims13" value="7" {% if user.sims13 == 7 %}checked{% endif %}>7<br></td>
+               </tr>
+               <tr>
+                  <td>14 - Porque acredito que esta atividade é importante para mim</td>
+                  <td><input type="checkbox" name="sims14" value="1" {% if user.sims14 == 1 %}checked{% endif %}>1<br></td>
+                  <td><input type="checkbox" name="sims14" value="2" {% if user.sims14 == 2 %}checked{% endif %}>2<br></td>
+                  <td><input type="checkbox" name="sims14" value="3" {% if user.sims14 == 3 %}checked{% endif %}>3<br></td>
+                  <td><input type="checkbox" name="sims14" value="4" {% if user.sims14 == 4 %}checked{% endif %}>4<br></td>
+                  <td><input type="checkbox" name="sims14" value="5" {% if user.sims14 == 5 %}checked{% endif %}>5<br></td>
+                  <td><input type="checkbox" name="sims14" value="6" {% if user.sims14 == 6 %}checked{% endif %}>6<br></td>
+                  <td><input type="checkbox" name="sims14" value="7" {% if user.sims14 == 7 %}checked{% endif %}>7<br></td>
+               </tr>
+               <tr>
+                  <td>15 - Porque sinto que tenho de fazê-lo</td>
+                  <td><input type="checkbox" name="sims15" value="1" {% if user.sims15 == 1 %}checked{% endif %}>1<br></td>
+                  <td><input type="checkbox" name="sims15" value="2" {% if user.sims15 == 2 %}checked{% endif %}>2<br></td>
+                  <td><input type="checkbox" name="sims15" value="3" {% if user.sims15 == 3 %}checked{% endif %}>3<br></td>
+                  <td><input type="checkbox" name="sims15" value="4" {% if user.sims15 == 4 %}checked{% endif %}>4<br></td>
+                  <td><input type="checkbox" name="sims15" value="5" {% if user.sims15 == 5 %}checked{% endif %}>5<br></td>
+                  <td><input type="checkbox" name="sims15" value="6" {% if user.sims15 == 6 %}checked{% endif %}>6<br></td>
+                  <td><input type="checkbox" name="sims15" value="7" {% if user.sims15 == 7 %}checked{% endif %}>7<br></td>
+               </tr>
+               <tr>
+                  <td>16 - Realizo esta atividade, mas não tenho certeza se é bom continuar</td>
+                  <td><input type="checkbox" name="sims16" value="1" {% if user.sims16 == 1 %}checked{% endif %}>1<br></td>
+                  <td><input type="checkbox" name="sims16" value="2" {% if user.sims16 == 2 %}checked{% endif %}>2<br></td>
+                  <td><input type="checkbox" name="sims16" value="3" {% if user.sims16 == 3 %}checked{% endif %}>3<br></td>
+                  <td><input type="checkbox" name="sims16" value="4" {% if user.sims16 == 4 %}checked{% endif %}>4<br></td>
+                  <td><input type="checkbox" name="sims16" value="5" {% if user.sims16 == 5 %}checked{% endif %}>5<br></td>
+                  <td><input type="checkbox" name="sims16" value="6" {% if user.sims16 == 6 %}checked{% endif %}>6<br></td>
+                  <td><input type="checkbox" name="sims16" value="7" {% if user.sims16 == 7 %}checked{% endif %}>7<br></td>
+               </tr>
+               <br>
+               
+               </tbody>
+            </table>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+
+         </form>
+      </div>
+   </body>
+   <small class="text-muted">
+      Return menu <a href="{{ url_for('index') }}" class="text-right">Home</a>
+  </small>  <footer class="main-footer">
+   <a href="{{ url_for('logout') }}">Logout</a>
+   <strong>Copyright &copy; 2023 <a href="https://pos.ucpel.edu.br/ppgeec/">uDemos</a>.</strong>
+   All rights reserved.
+   <div class="float-right d-none d-sm-inline-block">
+      <b>Versão</b> 1.0.1
+   </div>
+</footer>
+
+</footer>
+<!-- Control Sidebar -->
+<aside class="control-sidebar control-sidebar-dark">
+   <!-- Control sidebar content goes here -->
+</aside>
+<!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+<!-- jQuery -->
+<script src="/static/plugins/jquery/jquery.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="/static/plugins/jquery-ui/jquery-ui.min.js"></script>
+<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+<script>
+   $.widget.bridge('uibutton', $.ui.button)
+</script>
+<!-- Bootstrap 4 -->
+<script src="/static/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- ChartJS -->
+<script src="/static/plugins/chart.js/Chart.min.js"></script>
+<!-- Sparkline -->
+<script src="/static/plugins/sparklines/sparkline.js"></script>
+<!-- JQVMap -->
+<script src="/static/plugins/jqvmap/jquery.vmap.min.js"></script>
+<script src="/static/plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+<!-- jQuery Knob Chart -->
+<script src="/static/plugins/jquery-knob/jquery.knob.min.js"></script>
+<!-- daterangepicker -->
+<script src="/static/plugins/moment/moment.min.js"></script>
+<script src="/static/plugins/daterangepicker/daterangepicker.js"></script>
+<!-- Tempusdominus Bootstrap 4 -->
+<script src="/static/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+<!-- Summernote -->
+<script src="/static/plugins/summernote/summernote-bs4.min.js"></script>
+<!-- overlayScrollbars -->
+<script src="/static/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<!-- AdminLTE App -->
+<script src="/static/dist/js/adminlte.js"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="/static/dist/js/pages/dashboard.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="/static/dist/js/demo.js"></script>
+</body>
+{% endblock %}
